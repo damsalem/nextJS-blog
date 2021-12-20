@@ -4,10 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Create `.env.local` file in root folder with values of:
 
 ```javascript
-SANITY_DATASET_NAME=production // from sanity dashboard
-SANITY_PROJECT_ID=09rfjjd1 // from sanity dashboard
+SANITY_DATASET_NAME=YOUR_DATASET_NAME // from sanity dashboard
+SANITY_PROJECT_ID=YOUR_PROJECT_ID // from sanity dashboard
 SANITY_PREVIEW_SECRET=YOUR_PREVIEW_SECRET // unique string
-SANITY_API_TOKEN=skhdDapBYgkZivchZi1nEv47ZhNXHXyhDIGzH5sW7TXTLH9VjDNoTSYwVxy8TE2Qe4Q1A8l4K25z7grnh0fI6vLqz2dx2IFM4jBBXILvnYgKyjZy3tvTW2G60iFjRbJMp3bCJ5qcJ2GkxXEAEGajjqTADRsRaoKt4TTn6FkIUVui3zEsRcMa // from sanity dashboard
+SANITY_API_TOKEN=YOUR_API_TOKEN // from sanity dashboard
 ```
 
 2. Run the development server:
