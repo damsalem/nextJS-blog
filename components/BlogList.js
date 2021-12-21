@@ -24,7 +24,7 @@ export default function BlogList({data, filter}) {
           <CardItem 
           title={blog.title} 
           subtitle={blog.subtitle}
-          image={blog.coverImage}
+          image={blog?.coverImage || 'https://via.placeholder.com/300'}
           date={moment(blog.date).format('LL')}
           author={blog.author}
           link={{

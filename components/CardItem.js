@@ -3,6 +3,20 @@ import Link from 'next/link';
 import { urlFor } from 'lib/api';
 
 const CardItem = ({title, subtitle, image, date, author, link, mode = 'normal'}) => {
+
+    const validImage = (image) => {
+        if (image.hasOwnProperty('asset')) {
+            return {
+                src: urlFor(image).height(300).crop('center').url(),
+                alt: image.alt
+            }
+        }
+        return {
+            src: 'https://via.placeholder.com/300?text=+',
+            alt: `Thumbnail for article`
+        }
+    }
+
     return (
         <Card className={`fj-card ${mode}`}>
             <div className="card-body-wrapper">
@@ -34,13 +48,7 @@ const CardItem = ({title, subtitle, image, date, author, link, mode = 'normal'})
                     <div className="image-placeholder" />
                     :
                     <Card.Img
-                        src={
-                            image.hasOwnProperty('asset') ?
-                            urlFor(image)?.height(300).crop('center').url()
-                            :
-                            'https://via.placeholder.com/300?text=+'
-                            }
-                        alt={image.alt}
+                        {...validImage(image)}
                     />
                     }
                 </div>

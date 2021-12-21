@@ -77,6 +77,7 @@ export default function Home({blogs: initialData, preview}) {
 export async function getStaticProps({preview = false}) {
   const blogs = await getPaginatedBlogs({offset: 0, date: 'desc'});
   return {
-    props: {blogs, preview}
+    props: {blogs, preview},
+    revalidate: 1
   }
 }
