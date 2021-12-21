@@ -5,7 +5,7 @@ const HighlightCode = ({children, language}) => {
     const code = createRef();
 
     useEffect(() => {
-        highlight.highlightBlock(Node(code.current))
+        highlight.highlightBlock(code.current)
     }, [])
 
     return (
