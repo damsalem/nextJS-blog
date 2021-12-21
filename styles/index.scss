@@ -229,28 +229,28 @@ html, body {
     > img {
       max-width: 100%;
     }
-    &.image-float-left {
+    &.-image-float-left {
       float: left;
       margin-right: 20px;
     }
-    &.image-left {
+    &.-image-left {
       img {
         margin-right: auto;
         margin-left: 0;
         display: block;
       }
     }
-    &.image-center {
+    &.-image-center {
       //default no styling
     }
-    &.image-right {
+    &.-image-right {
       img {
         margin-right: 0;
         margin-left: auto;
         display: inline-block;
       }
     }
-    &.image-float-right {
+    &.-image-float-right {
       float: right;
       margin-left: 20px;
     }
