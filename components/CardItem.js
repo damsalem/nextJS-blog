@@ -61,8 +61,12 @@ const CardItem = ({title, subtitle, image, date, author, link, mode = 'normal'})
                     </>
                     :
                     <>
-                        <Card.Title className="card-main-title">{title}</Card.Title>
-                        <Card.Text>{subtitle}</Card.Text>
+                        <Card.Title className="card-main-title">
+                            {title.length > 40 ? title.substring(0, 40) + '...' : title}
+                        </Card.Title>
+                        <Card.Text>
+                            {subtitle.length > 40 ? subtitle.substring(0, 40) + '...' : title}
+                        </Card.Text>
                     </>
                 }
             </Card.Body>

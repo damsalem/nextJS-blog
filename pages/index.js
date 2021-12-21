@@ -52,7 +52,7 @@ export default function Home({blogs: initialData, preview}) {
                 <CardListItemBlank />
               </Col>
               :
-              <Col key={`${i}-item`} md="4">
+              <Col key={`${i}-item`} md="6" lg="4">
                 <CardItemBlank />
               </Col>
             )

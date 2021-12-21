@@ -20,7 +20,7 @@ export default function BlogList({data, filter}) {
           />
         </Col>
         :
-        <Col key={`${blog.slug}-card`} md="4">
+        <Col key={`${blog.slug}-card`} md="6" lg="4">
           <CardItem 
           title={blog.title} 
           subtitle={blog.subtitle}
